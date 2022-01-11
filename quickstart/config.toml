@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://cranky-wilson-4208f4.netlify.app'
 languageCode = 'en-us'
 title = 'My site'
 #them="sandbox"
@@ -17,4 +17,3 @@ authors="Lucas"
     title='activities'
     url="activities"
     weight=10
-baseURL = 'https://peaceful-goodall-9b3e71.netlify.app'
