@@ -43,7 +43,7 @@
     <nav class="nav">
         <div class="logo">
             {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
-            {{- $baseurl := .Site.BaseUrl}}
+            {{- $baseurl := .Site.baseUrl}}
             {{- if .Site.Title }}
             <a href="baseurl/" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if .Site.Params.label.icon }}
@@ -102,7 +102,7 @@
         </div>
         {{- $currentPage := . }}
         <ul id="menu">
-            {{- $baseurl := .Site.BaseUrl}}
+            {{- $baseurl := .Site.baseUrl}}
             {{- range .Site.Menus.main }}
             <li>
                 <a href="baseurl/{{ .URL | absLangURL }}" >

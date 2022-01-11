@@ -3,7 +3,7 @@
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
-    {{- $baseurl := .Site.BaseUrl}}
+    {{- $baseurl := .Site.baseUrl}}
     <span>&copy; {{ now.Year }} <a href="baseurl/">{{ .Site.Title }}</a></span>
     {{- end }}
     <span>
