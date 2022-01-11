@@ -17,3 +17,4 @@ authors="Lucas"
     title='activities'
     url="activities"
     weight=10
+baseURL = 'https://peaceful-goodall-9b3e71.netlify.app'
