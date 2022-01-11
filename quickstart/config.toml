@@ -1,0 +1,19 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My site'
+#them="sandbox"
+theme="hugo-PaperMod-master"
+authors="Lucas"
+[menu]
+[[menu.main]]
+    identifier='introduction'
+    name='Introduction'
+    title='Introduction section'
+    url='/introduction/'
+    weight=10
+[[menu.main]]
+    identifier='activities'
+    name='Profeional activities'
+    title='activities'
+    url='/activities/'
+    weight=10

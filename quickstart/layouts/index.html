@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+<html lang="{{ .Site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq $.Site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+    <div class="main">
+        <img src="image/PhotoID.jpg" alt="ID" class="ID_photo">
+        <div class="text_home">
+            <p> <h3>Welcom in my site.</h3><br>Contact are below.
+        </div>
+    </div>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
+
+</html>
