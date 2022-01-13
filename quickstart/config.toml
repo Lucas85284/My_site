@@ -1,7 +1,6 @@
 baseURL = 'https://cranky-wilson-4208f4.netlify.app'
 languageCode = 'en-us'
 title = 'My site'
-#them="sandbox"
 theme="hugo-PaperMod-master"
 authors="Lucas"
 [menu]
